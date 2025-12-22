@@ -1,1 +1,2 @@
 Manual doc
+Master: changes master
