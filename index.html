@@ -9,38 +9,43 @@
   <form action="#" method="GET">
     <label>
       Login:<br/>
-      <input type="text" name="login" enterkeyhint="next" />
+      <input type="text" name="login" enterkeyhint="enter" />
     </label>
     
     <br/>
-    <br/>
-    
+
     <label>
       Password:<br/>
-      <input type="password" name="password" enterkeyhint="next" />
+      <input type="password" name="password" enterkeyhint="go" />
     </label>
     
     <br/>
-    <br/>
-    <fieldset>
-      <legend>What is you favourite web technology?</legend>
-
-      <input type="radio" name="webfeature" id="html" value="html" enterkeyhint="next">
-      <label for="html">HTML</label>
-
-      <input type="radio" name="webfeature" id="css" value="css" enterkeyhint="next">
-      <label for="css">CSS</label>
-
-    </fieldset>
 
     <label for="order-num">Order num</label>
     <input type="numeric" name="order-num" id="order-num" enterkeyhint="next"/>
 
-    <br>
-    <br>
+    <br/>
+
+    <label for="order-num">Order sum</label>
+    <input type="numeric" name="order-sum" id="order-sum" enterkeyhint="previous"/>
+
+    <br/>
     
     <label for="animal">What is your favourite animal?</label>
     <input required pattern="[a-z]{2,20}" type="text" id="animal" name="animal" enterkeyhint="done" />
+
+    <br/>
+
+    <label for="color">What is your favourite color?</label>
+    <input required pattern="[a-z]{2,20}" type="text" id="color" name="color" enterkeyhint="search" />
+
+    <br/>
+
+    <label for="os">What is your favourite OS?</label>
+    <input required pattern="[a-z]{2,20}" type="text" id="os" name="os" enterkeyhint="send" />
+
+    <br/>
+    
     <button type="submit">Submit</button>
   </form>
 </body>
