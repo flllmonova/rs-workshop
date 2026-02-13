@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="#" method="GET">
+    <label>
+      Login:<br/>
+      <input type="text" name="login" enterkeyhint="next" />
+    </label>
+    
+    <br/>
+    <br/>
+    
+    <label>
+      Password:<br/>
+      <input type="password" name="password" enterkeyhint="next" />
+    </label>
+    
+    <br/>
+    <br/>
+    <fieldset>
+      <legend>What is you favourite web technology?</legend>
+
+      <input type="radio" name="webfeature" id="html" value="html">
+      <label for="html">HTML</label>
+
+      <input type="radio" name="webfeature" id="css" value="css">
+      <label for="css">CSS</label>
+
+    </fieldset>
+
+    <label for="order-num">Order num</label>
+    <input type="numeric" name="order-num" id="order-num" />
+    
+    <label for="animal">What is your favourite animal?</label>
+    <input required pattern="[a-z]{2,20}" type="text" id="animal" name="animal" enterkeyhint="done" />
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
